@@ -20,7 +20,7 @@ function posicaoRandomica(){
         if(vidas > 3){
 
         }else{
-            document.getElementById('v' + vidas).src ="coracao_vazio.png"
+            document.getElementById('v' + vidas).src ="./img/coracao_vazio.png"
             vidas++
         }
     }
