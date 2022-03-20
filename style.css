@@ -1,4 +1,9 @@
 
+
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+}
 /*Tamanhos para mosquiros aleatorios*/
 /*Tamanho 1*/
 .mosquito1{
@@ -24,4 +29,28 @@
 /*Girando o lado do mosquito para direita*/
 .ladoB{
     transform: scaleX(-1);
+}
+
+/*Painel de vida
+-----------------------------------------*/
+
+.painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px white;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.vidas{
+    float: left;
+}
+
+.cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
 }
