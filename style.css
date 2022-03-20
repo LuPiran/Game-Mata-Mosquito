@@ -15,3 +15,13 @@
     width: 90px;
     height: 90px;
 }
+
+/*Girando o lado do mosquito para esquerda*/
+.ladoA{
+    transform: scaleX(1);
+}
+
+/*Girando o lado do mosquito para direita*/
+.ladoB{
+    transform: scaleX(-1);
+}
