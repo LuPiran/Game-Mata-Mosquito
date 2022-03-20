@@ -9,7 +9,16 @@ function ajustaTamanhoPalcoJogo(){
     
 ajustaTamanhoPalcoJogo()
 
-var posicaoX = Math.random() * largura
-var posicaoY = Math.random() * altura
+function posicaoRandomica(){
+    var posicaoX = Math.floor(Math.random() * largura)
+    var posicaoY = Math.floor(Math.random() * altura)
 
-console.log(posicaoX, posicaoY)
+    console.log(posicaoX, posicaoY)
+
+    //criar o elemento html
+    var mosquito = document.createElement('img')
+    mosquito.src = 'mosca.png'
+
+    document.body.appendChild(mosquito)
+}
+
