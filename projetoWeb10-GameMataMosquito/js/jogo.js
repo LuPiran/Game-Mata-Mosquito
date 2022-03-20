@@ -18,8 +18,10 @@ function posicaoRandomica(){
         document.getElementById('mosquito').remove()
 
         if(vidas > 3){
-
+            //Gamer Over
+            window.location.href = "fim_de_jogo.html"
         }else{
+            //Sistema de perda de vida
             document.getElementById('v' + vidas).src ="./img/coracao_vazio.png"
             vidas++
         }
