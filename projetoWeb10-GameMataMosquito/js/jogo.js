@@ -1,7 +1,7 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 10
+var tempo = 15
 
 function ajustaTamanhoPalcoJogo(){
     altura = window.innerHeight
@@ -14,7 +14,14 @@ ajustaTamanhoPalcoJogo()
 //cronometro do jogo
 var cronometro = setInterval(function(){
     tempo -= 1
-    document.getElementById('cronometro').innerHTML = tempo
+    if(tempo < 0){
+        //Fluxo de vitoria
+        clearInterval(cronometro)
+        clearInterval(criaMosca)
+    }else{
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+   
 },1000)
 
 //função para fazer o mosquito aparecer na tela randomicamente 
