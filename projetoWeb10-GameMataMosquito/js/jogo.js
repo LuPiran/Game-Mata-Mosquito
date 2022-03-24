@@ -18,6 +18,7 @@ var cronometro = setInterval(function(){
         //Fluxo de vitoria
         clearInterval(cronometro)
         clearInterval(criaMosca)
+        window.location.href = 'vitoria.html'
     }else{
         document.getElementById('cronometro').innerHTML = tempo
     }
