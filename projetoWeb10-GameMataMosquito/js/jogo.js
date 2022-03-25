@@ -1,8 +1,27 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 15
+var tempo = 10
 
+var criaMosquitoTempo = 2000
+
+//configurando o nivel do jogo
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+
+if(nivel === 'facil'){
+    // tempo da mosca de 2000mls(2seg)
+    criaMosquitoTempo = 2000
+}else if(nivel === 'medio'){
+    // tempo da mosca de 1000mls(1seg)
+    criaMosquitoTempo = 1000
+}else if(nivel == 'dificil'){
+    //tempo da mosca de 750mls
+    criaMosquitoTempo = 750
+
+}
+
+//ajuste da tela do jogo
 function ajustaTamanhoPalcoJogo(){
     altura = window.innerHeight
     largura = window.innerWidth
